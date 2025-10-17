@@ -1,0 +1,129 @@
+Create a complete Next.js 14 e-commerce website for "Artisanal Cassava Flour Co." using this exact TweakCN theme with organic animations and premium boutique design.
+
+## EXACT COLOR THEME (DO NOT MODIFY):
+:root {
+  --background: oklch(0.9779 0.0042 56.3756);
+  --foreground: oklch(0.2178 0 0);
+  --primary: oklch(0.4650 0.1470 24.9381);
+  --primary-foreground: oklch(1.0000 0 0);
+  --secondary: oklch(0.9625 0.0385 89.0943);
+  --secondary-foreground: oklch(0.4847 0.1022 75.1153);
+  --accent: oklch(0.9619 0.0580 95.6174);
+  --muted: oklch(0.9431 0.0068 53.4442);
+  --border: oklch(0.9355 0.0324 80.9937);
+  --chart-1: oklch(0.5054 0.1905 27.5181);
+  --chart-2: oklch(0.4650 0.1470 24.9381);
+}
+
+## EXACT TYPOGRAPHY (DO NOT MODIFY):
+--font-sans: Poppins, sans-serif;
+--font-serif: Libre Baskerville, serif;
+--font-mono: IBM Plex Mono, monospace;
+
+## PRODUCT STRUCTURE:
+Single product "Artisanal Cassava Flour" with 3 variants:
+- 1kg: $9.99 (stock: 42) - "Starter Pack"
+- 2kg: $18.99 (stock: 25) - "Family Size" 
+- 5kg: $44.99 (stock: 12) - "Premium Bundle"
+
+Premium tier: 10kg-50kg custom sizes for restaurants/businesses after 3+ orders or business verification
+
+## PAGES & ROUTES:
+- / (Homepage)
+- /boutique (Product gallery)
+- /origins (Story & heritage)
+- /culinary (Recipes & cooking)
+- /atelier (Bulk orders)
+- /sustainability (Impact & community)
+- /cart (Shopping experience)
+- /checkout
+
+## UNIQUE DESIGN APPROACH:
+*Organic Luxury Boutique* with handcrafted elements, terracotta tones, and artisanal aesthetics
+
+## HOMEPAGE SECTIONS:
+1. Hero: Floating cassava illustrations with gentle hover animations + terracotta gradients
+2. Story: Scroll-triggered process timeline with organic shape transitions
+3. Products: Gallery-style asymmetric grid with handmade paper textures
+4. Quality: Animated indicators that "grow" as user scrolls
+5. Heritage: Interactive family timeline with hand-drawn elements
+6. Community: Impact dashboard with environmental metrics
+
+## BOUTIQUE SHOP PAGE FEATURES:
+- Asymmetric product grid mimicking organic patterns
+- Terracotta toggle buttons for size variants
+- Cards with deckled edges and paper textures
+- Hover-activated depth with custom shadow transformations
+- Micro-interactions with soil texture reveals
+
+## INTERACTIVE ELEMENTS:
+- Gentle floating animations on key elements
+- Magnetic buttons with earthy ripple effects
+- Scroll-triggered growth animations
+- Glass morphism overlays with backdrop blur
+- Gradient borders with organic color transitions
+- Custom shadows using theme's shadow variables
+- Texture overlays for depth and authenticity
+
+## INTELLIGENT STOCK DISPLAY:
+- Abundant (>30): Green leaf + "Plenty Available"
+- Healthy (10-30): Orange + "Good Stock"  
+- Limited (<10): Red + "Almost Gone"
+- Real-time updates with smooth animations
+- Predictive restocking dates
+- Seasonal availability calendar
+
+## PREMIUM ACCESS SYSTEM:
+Tiered visibility:
+- Regular: 1kg, 2kg, 5kg variants
+- Elite: 10kg-50kg custom sizes
+- Unlock: 3+ orders OR business verification
+- Features: Custom packaging, branding, priority support
+
+## CULINARY ACADEMY PAGE:
+- Step-by-step recipe builder with video integration
+- Measurement converter with animated transitions
+- Chef tutorial carousel with personalized recommendations
+- User recipe submission platform
+
+## ATELIER BULK ORDERS:
+- Custom order builder with material selection
+- Real-time packaging preview with branding options
+- Volume discount visualization with elegant charts
+- Business onboarding with progressive forms
+
+## SUSTAINABILITY HUB:
+- Animated environmental impact metrics
+- Community support visualization
+- Carbon footprint calculator
+- Farmer partnership stories
+
+## E-COMMERCE FUNCTIONALITY:
+- Working cart system with organic animations
+- Tier-aware pricing and discounts
+- Stock validation with real-time checks
+- Checkout process with premium payment options
+- Order tracking with progress illustrations
+- Personalized packaging selection
+
+## MOBILE RESPONSIVENESS:
+- Touch-friendly organic gestures
+- Simplified animations for performance
+- Adaptive typography scaling
+- Mobile-first component variants
+
+## PERFORMANCE OPTIMIZATION:
+- Optimized image loading with blur placeholders
+- Progressive enhancement for interactions
+- Smart resource loading based on connection
+- Efficient animation rendering
+
+## ACCESSIBILITY:
+- High contrast mode support
+- Reduced motion preferences respected
+- Keyboard navigation enhancements
+- Screen reader optimized content
+
+Generate complete Next.js code with all pages, functional navigation, working cart system, and organic interactive features. Use the exact color theme and typography provided. Ensure all product variants display correctly with intelligent stock indicators and the elite tier system works seamlessly.
+
+Focus on creating a premium, artisanal experience that feels both luxurious and authentically connected to traditional cassava processing, using the rich terracotta and cream color scheme with organic, flowing design elements and handcrafted UI components.
