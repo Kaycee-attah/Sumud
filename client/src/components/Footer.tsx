@@ -8,7 +8,7 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
             <h3 className="font-serif text-xl font-bold text-foreground mb-4" data-testid="text-footer-brand">
-              Sumd
+              Sumud
             </h3>
             <p className="text-muted-foreground text-sm" data-testid="text-footer-tagline">
               Premium artisan cassava flour, sustainably sourced and traditionally processed.
