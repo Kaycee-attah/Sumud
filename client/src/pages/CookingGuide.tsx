@@ -64,7 +64,7 @@ export default function Cooking_Guide() {
               </div>
               <h3 className="font-serif text-2xl font-bold mb-2">Traditional Akpu Preparation</h3>
               <p className="text-green-100">Image: Freshly prepared Akpu with traditional soups</p>
-              <p className="text-green-200 text-sm mt-2">Replace with your actual Akpu image</p>
+              {/* <p className="text-green-200 text-sm mt-2">Replace with your actual Akpu image</p> */}
             </div>
           </div>
         </div>
