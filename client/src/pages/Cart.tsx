@@ -124,12 +124,12 @@ export default function Cart() {
               <div className="space-y-3 mb-6">
                 <div className="flex justify-between text-foreground">
                   <span data-testid="text-subtotal-label">Subtotal</span>
-                  <span data-testid="text-subtotal">${subtotal.toFixed(2)}</span>
+                  <span data-testid="text-subtotal">₦{subtotal.toFixed(2)}</span>
                 </div>
                 <div className="flex justify-between text-foreground">
                   <span data-testid="text-shipping-label">Shipping</span>
                   <span data-testid="text-shipping">
-                    {shipping === 0 ? 'Free' : `$${shipping.toFixed(2)}`}
+                    {shipping === 0 ? 'Free' : `₦${shipping.toFixed(2)}`}
                   </span>
                 </div>
                 {subtotal < 50 && (
@@ -140,7 +140,7 @@ export default function Cart() {
                 <div className="border-t border-border pt-3">
                   <div className="flex justify-between text-lg font-bold text-foreground">
                     <span data-testid="text-total-label">Total</span>
-                    <span data-testid="text-total">${total.toFixed(2)}</span>
+                    <span data-testid="text-total">₦{total.toFixed(2)}</span>
                   </div>
                 </div>
               </div>
