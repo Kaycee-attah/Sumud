@@ -33,6 +33,14 @@ jobs:
     - name: Build project
       run: npm run build
     
+    - name: Fix for client-side routing
+      run: |
+        # Create 404.html from index.html
+        cp dist/public/index.html dist/public/404.html
+        # Also ensure the base path is correct in the built files
+        find dist/public -name "*.html" -exec sed -i 's/href="\//href="\/Sumud\//g' {} \;
+        find dist/public -name "*.html" -exec sed -i 's/src="\//src="\/Sumud\//g' {} \;
+    
     - name: Setup Pages
       uses: actions/configure-pages@v4
     
