@@ -1,0 +1,21 @@
+.light-rays-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  pointer-events: none;
+  z-index: 3;
+  overflow: hidden;
+}
+
+
+/* Ensure the light rays container doesn't interfere with card content */
+.testimonial-light-rays {
+  pointer-events: none;
+}
+
+/* Glass card enhancement for better readability over light rays */
+.glass-card {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}

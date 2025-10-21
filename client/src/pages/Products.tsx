@@ -3,12 +3,12 @@ import product1kg from "@assets/generated_images/Cassava_flour_1kg_product_419b2
 import product2kg from "@assets/generated_images/Cassava_flour_2kg_product_f2079dd8.png";
 import product5kg from "@assets/generated_images/Cassava_flour_5kg_product_0b256313.png";
 
-export default function Shop() {
+export default function Products() {
   //todo: remove mock functionality
   const variants = [
-    { id: '1', size: '1kg', price: 8.99, stock: 38, label: 'Essentials' },
-    { id: '2', size: '2kg', price: 16.99, stock: 22, label: 'Family Pack' },
-    { id: '3', size: '5kg', price: 39.99, stock: 15, label: 'Premium Bundle' },
+    { id: '1', size: '1kg', price: 2500, stock: 38, label: 'Essentials' },
+    { id: '2', size: '2kg', price: 3700, stock: 22, label: 'Family Pack' },
+    { id: '3', size: '5kg', price: 5500, stock: 15, label: 'Premium Bundle' },
   ];
 
   return (

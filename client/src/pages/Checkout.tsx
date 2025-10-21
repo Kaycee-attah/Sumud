@@ -23,7 +23,7 @@ export default function Checkout() {
   };
 
   //todo: remove mock functionality
-  const orderTotal = 39.97;
+  const orderTotal = 16500;
 
   return (
     <div className="min-h-screen py-12 px-4 sm:px-6 lg:px-8">
@@ -153,7 +153,7 @@ export default function Checkout() {
               </div>
 
               <Button type="submit" className="w-full" size="lg" data-testid="button-place-order">
-                Place Order - ${orderTotal.toFixed(2)}
+                Place Order - ₦{orderTotal.toFixed(2)}
               </Button>
             </form>
           </div>
@@ -169,21 +169,21 @@ export default function Checkout() {
                     <p className="font-medium text-foreground" data-testid="text-item-name">Artisan Cassava Flour</p>
                     <p className="text-sm text-muted-foreground" data-testid="text-item-variant">2kg - Family Pack × 2</p>
                   </div>
-                  <p className="font-medium text-foreground" data-testid="text-item-price">$33.98</p>
+                  <p className="font-medium text-foreground" data-testid="text-item-price">₦15000</p>
                 </div>
               </div>
               <div className="border-t border-border pt-4 space-y-2">
                 <div className="flex justify-between text-foreground">
                   <span data-testid="text-summary-subtotal-label">Subtotal</span>
-                  <span data-testid="text-summary-subtotal">$33.98</span>
+                  <span data-testid="text-summary-subtotal">₦15000</span>
                 </div>
                 <div className="flex justify-between text-foreground">
                   <span data-testid="text-summary-shipping-label">Shipping</span>
-                  <span data-testid="text-summary-shipping">$5.99</span>
+                  <span data-testid="text-summary-shipping">₦1500</span>
                 </div>
                 <div className="flex justify-between text-lg font-bold text-foreground pt-2 border-t border-border">
                   <span data-testid="text-summary-total-label">Total</span>
-                  <span data-testid="text-summary-total">${orderTotal.toFixed(2)}</span>
+                  <span data-testid="text-summary-total">₦{orderTotal.toFixed(2)}</span>
                 </div>
               </div>
             </div>

@@ -51,7 +51,7 @@ export function ProductCard({ image, name, description, variants }: ProductCardP
               onClick={() => setSelectedVariant(variant)}
               data-testid={`badge-variant-${variant.size}`}
             >
-              {variant.size} - ${variant.price}
+              {variant.size} - ₦{variant.price}
             </Badge>
           ))}
         </div>
@@ -84,7 +84,7 @@ export function ProductCard({ image, name, description, variants }: ProductCardP
         <div className="flex items-center justify-between gap-4">
           <div>
             <p className="text-2xl font-bold text-foreground" data-testid="text-price">
-              ${(selectedVariant.price * quantity).toFixed(2)}
+              ₦{(selectedVariant.price * quantity).toFixed(2)}
             </p>
             <p className="text-xs text-muted-foreground" data-testid="text-variant-label">
               {selectedVariant.label}

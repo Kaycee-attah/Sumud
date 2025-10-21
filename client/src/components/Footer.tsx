@@ -8,7 +8,7 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
             <h3 className="font-serif text-xl font-bold text-foreground mb-4" data-testid="text-footer-brand">
-              Cassava Flour Co.
+              Sumd
             </h3>
             <p className="text-muted-foreground text-sm" data-testid="text-footer-tagline">
               Premium artisan cassava flour, sustainably sourced and traditionally processed.
@@ -18,9 +18,9 @@ export function Footer() {
           <div>
             <h4 className="font-semibold text-foreground mb-4" data-testid="text-footer-shop-title">Shop</h4>
             <ul className="space-y-2">
-              <li><Link href="/shop"><a className="text-muted-foreground hover:text-foreground text-sm" data-testid="link-footer-products">Products</a></Link></li>
+              <li><Link href="/products"><a className="text-muted-foreground hover:text-foreground text-sm" data-testid="link-footer-products">Products</a></Link></li>
               <li><Link href="/premium"><a className="text-muted-foreground hover:text-foreground text-sm" data-testid="link-footer-premium">Premium Bulk</a></Link></li>
-              <li><Link href="/recipes"><a className="text-muted-foreground hover:text-foreground text-sm" data-testid="link-footer-recipes">Recipes</a></Link></li>
+              <li><Link href="/cookingGuide"><a className="text-muted-foreground hover:text-foreground text-sm" data-testid="link-footer-recipes">Cooking Guide</a></Link></li>
             </ul>
           </div>
 
@@ -51,7 +51,7 @@ export function Footer() {
 
         <div className="border-t border-border mt-8 pt-8 text-center">
           <p className="text-muted-foreground text-sm" data-testid="text-footer-copyright">
-            © 2024 Cassava Flour Co. All rights reserved.
+            © 2025 Sumud. All rights reserved.
           </p>
         </div>
       </div>

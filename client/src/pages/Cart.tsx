@@ -4,13 +4,13 @@ import { Link } from "wouter";
 import { useState } from "react";
 
 export default function Cart() {
-  //todo: remove mock functionality
+
   const [cartItems, setCartItems] = useState([
     {
       id: '1',
       name: 'Artisan Cassava Flour',
       variant: '2kg - Family Pack',
-      price: 16.99,
+      price: 3700,
       quantity: 2,
       image: '/placeholder.png',
     },
@@ -44,7 +44,7 @@ export default function Cart() {
           <p className="text-muted-foreground mb-8" data-testid="text-empty-cart-subtitle">
             Start shopping to add items to your cart
           </p>
-          <Link href="/shop">
+          <Link href="/products">
             <a>
               <Button data-testid="button-start-shopping">Start Shopping</Button>
             </a>
@@ -98,7 +98,7 @@ export default function Cart() {
                       </div>
                       <div className="flex items-center gap-4">
                         <p className="text-lg font-semibold text-foreground" data-testid={`text-item-total-${item.id}`}>
-                          ${(item.price * item.quantity).toFixed(2)}
+                          ₦{(item.price * item.quantity).toFixed(2)}
                         </p>
                         <Button
                           size="sm"
@@ -151,7 +151,7 @@ export default function Cart() {
                   </Button>
                 </a>
               </Link>
-              <Link href="/shop">
+              <Link href="/products">
                 <a>
                   <Button variant="outline" className="w-full mt-3" data-testid="button-continue-shopping">
                     Continue Shopping

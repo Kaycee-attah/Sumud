@@ -141,7 +141,7 @@ export default function Premium() {
         <div className="glass-card rounded-lg p-8 text-center">
           <h3 className="font-serif text-2xl font-bold text-foreground mb-4" data-testid="text-eligibility-title">Eligibility Requirements</h3>
           <p className="text-muted-foreground max-w-3xl mx-auto" data-testid="text-eligibility-desc">
-            Premium bulk orders are available to verified businesses or customers with 4+ orders. New to Cassava Flour Co? Start with our standard packages and unlock elite tier benefits as you grow with us.
+            Premium bulk orders are available to verified businesses or customers with 4+ orders. New to Sumud? Start with our standard packages and unlock elite tier benefits as you grow with us.
           </p>
         </div>
       </div>

@@ -7,10 +7,10 @@ import { ThemeProvider } from "@/components/ThemeProvider";
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 import Home from "@/pages/Home";
-import Shop from "@/pages/Shop";
+import Products from "@/pages/Products";
 import Process from "@/pages/Process";
 import Premium from "@/pages/Premium";
-import Recipes from "@/pages/Recipes";
+import CookingGuide from "@/pages/CookingGuide";
 import Sustainability from "@/pages/Sustainability";
 import Cart from "@/pages/Cart";
 import Checkout from "@/pages/Checkout";
@@ -20,10 +20,10 @@ function Router() {
   return (
     <Switch>
       <Route path="/" component={Home} />
-      <Route path="/shop" component={Shop} />
+      <Route path="/products" component={Products} />
       <Route path="/process" component={Process} />
       <Route path="/premium" component={Premium} />
-      <Route path="/recipes" component={Recipes} />
+      <Route path="/cookingGuide" component={CookingGuide} />
       <Route path="/sustainability" component={Sustainability} />
       <Route path="/cart" component={Cart} />
       <Route path="/checkout" component={Checkout} />

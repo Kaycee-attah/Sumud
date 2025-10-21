@@ -2,6 +2,7 @@ import { Hero } from "@/components/Hero";
 import { Features } from "@/components/Features";
 import { ProductCard } from "@/components/ProductCard";
 import { TestimonialCard } from "@/components/TestimonialCard";
+import LightRays from "@/components/LightRays/LightRays";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import { Link } from "wouter";
@@ -13,9 +14,9 @@ import processImage from "@assets/generated_images/Traditional_cassava_processin
 export default function Home() {
   //todo: remove mock functionality
   const productVariants = [
-    { id: '1', size: '1kg', price: 8.99, stock: 38, label: 'Essentials' },
-    { id: '2', size: '2kg', price: 16.99, stock: 22, label: 'Family Pack' },
-    { id: '3', size: '5kg', price: 39.99, stock: 15, label: 'Premium Bundle' },
+    { id: '1', size: '1kg', price: 2500, stock: 38, label: 'Essentials' },
+    { id: '2', size: '2kg', price: 3700, stock: 22, label: 'Family Pack' },
+    { id: '3', size: '5kg', price: 5500, stock: 15, label: 'Premium Bundle' },
   ];
 
   const testimonials = [
@@ -104,24 +105,50 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="py-20 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-12">
-            <h2 className="font-serif text-3xl md:text-4xl font-bold text-foreground mb-4" data-testid="text-testimonials-title">
-              What Our Customers Say
-            </h2>
-            <p className="text-muted-foreground max-w-2xl mx-auto" data-testid="text-testimonials-subtitle">
-              Join thousands of satisfied customers who trust our cassava flour
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {testimonials.map((testimonial, index) => (
-              <TestimonialCard key={index} {...testimonial} />
-            ))}
-          </div>
+       <section className="relative py-20 px-4 sm:px-6 lg:px-8 overflow-hidden">
+      {/* LightRays Background - with theme-compatible colors */}
+      <div className="absolute inset-0 z-0">
+        <LightRays
+          raysOrigin="top-center"
+          raysColor="hsl(142.1, 76.2%, 36.3%)" // Using your primary color from previous code
+          raysSpeed={1.2}
+          lightSpread={0.7}
+          rayLength={1.0}
+          followMouse={true}
+          mouseInfluence={0.08}
+          noiseAmount={0.08}
+          distortion={0.03}
+          className="testimonial-section-lightrays"
+        />
+        
+        {/* Subtle overlay that matches your site's background */}
+        <div className="absolute inset-0 bg-background/20" />
+      </div>
+      
+      {/* Your existing content */}
+      <div className="max-w-7xl mx-auto relative z-10">
+        <div className="text-center mb-12">
+          <h2 
+            className="font-serif text-3xl md:text-4xl font-bold text-foreground mb-4" 
+            data-testid="text-testimonials-title"
+          >
+            What Our Customers Say
+          </h2>
+          <p 
+            className="text-muted-foreground max-w-2xl mx-auto" 
+            data-testid="text-testimonials-subtitle"
+          >
+            Join thousands of satisfied customers who trust our cassava flour
+          </p>
         </div>
-      </section>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          {testimonials.map((testimonial, index) => (
+            <TestimonialCard key={index} {...testimonial} />
+          ))}
+        </div>
+      </div>
+    </section>
 
       <section className="py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto text-center">
@@ -130,9 +157,9 @@ export default function Home() {
               Ready to Experience Premium Quality?
             </h2>
             <p className="text-muted-foreground mb-8 max-w-2xl mx-auto" data-testid="text-cta-subtitle">
-              Order now and discover why professional bakers and home cooks choose Cassava Flour Co.
+              Order now and discover why professional bakers and home cooks choose Sumud
             </p>
-            <Link href="/shop">
+            <Link href="/products">
               <a>
                 <Button size="lg" data-testid="button-cta-shop">
                   Start Shopping
